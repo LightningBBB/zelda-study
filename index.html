@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Study</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="./recources/favicons/triforce_coloured.png">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="wallpaper-image">
+        <div class="music-bar">
+            <div class="audio-box">
+                <audio controls class="audio-controls">
+                    <source src="./recources/sounds/botw_ambient.mp3" type="audio/mpeg">
+                    No audio support
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls class="audio-controls">
+                    <source src="./recources/sounds/tarrey_town.mp3" type="audio/mpeg">
+                    No audio support
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls class="audio-controls">
+                    <source src="./recources/sounds/korok_forest.mp3" type="audio/mpeg">
+                    No audio support
+                </audio>
+            </div>
+            
+            
+        </div>
+
+        <div class="tool-box">
+            <button id="change-wallpaper" class="tool-button1">BG</button>
+            <div>
+                <button id="toggle-rain" class="tool-button1">🌧️</button>
+                <audio id="rain-sound" src="./recources/sounds/rain.mp3" loop></audio>
+            </div>
+            <div>
+                <button id="toggle-campfire" class="tool-button1">🔥</button>
+                <audio id="campfire-sound" src="./recources/sounds/campfire.mp3" loop></audio>
+            </div>
+            <div class="tool-button1"></div>
+            <div class="tool-button1"></div>
+            <div class="tool-button2">Test</div>
+            <input type="range" id="brightness-slider" min="0" max="0.9" step="0.1" value="0">
+        </div> 
+        <div class="checklist-container">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="customNoteCheckbox">
+                <label for="customNoteCheckbox">
+                  <input type="text" class="checkbox-text">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="timer-box visible focused">
+        <div id="timer">25:00</div>
+        <div class="controls">
+            <button id="startPause" class="btn">Start</button>
+        <button id="reset" class="btn">Reset</button>
+        <button id="toggleDuration" class="btn">Timer</button>
+        </div>
+    </div>
+    <div class="links-dropdown">
+        <p class="dropdown-instructions font-yellow">▼---{LINKS}---▼</p>
+        <a href="https://classroom.google.com/u/0/h" class="link1" target="_blank">Google Classroom</a>
+        <a href="https://app.educationperfect.com/learning/dashboard" class="link1" target="_blank">Education Perfect</a>
+        <a href="https://drive.google.com/drive/home" class="link1" target="_blank">Google Drive</a>
+    </div>
+    
+    <div class="container clock-box">
+        <p class="font-yellow clock">-time-</p>
+    </div>
+    <div id="clock-mini" class="clock-mini">
+        <p class="font-yellow clock">-time-</p>
+    </div>
+
+    <div class="container date-box">
+        <p id="date" class="font-yellow"></p>
+    </div>
+    
+    <div id="brightness"></div>
+</body>
+</html>

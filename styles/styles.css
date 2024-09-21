@@ -1,0 +1,482 @@
+/* === Custom Fonts === */
+@font-face {
+    font-family: 'bluffolk';
+    src: url(../recources/fonts/Bluffolk.otf);
+}
+
+@font-face {
+    font-family: 'hylia-serif';
+    src: url(../recources/fonts/HyliaSerifBeta-Regular.otf);
+}
+
+/* === General Body Styles === */
+body {
+    margin: 0;
+    background-color: rgb(124, 126, 221);
+    font-family: 'hylia-serif';
+    justify-content: center;
+}
+
+/* === Font Colors === */
+.font-red {
+    color: rgb(192, 104, 145);
+}
+
+.font-green {
+    color: rgb(96, 147, 151);
+}
+
+.font-yellow {
+    color: rgb(249, 217, 165);
+}
+
+/* === Wallpaper Image === */
+#wallpaper-image {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* === Layout Sections === */
+
+.clock-box {
+    top: 20px;
+    left: 20px;
+    position: fixed; /* Change this from relative to fixed */
+}
+
+.date-box {
+    top: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+/* Container for Centered Content */
+.container {
+    height: 105px;
+    width: 435px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(83, 127, 255);
+    color: white;
+    text-align: center;
+    font-family: 'hylia-serif';
+    font-size: 60px;
+}
+
+/* Invisible Container */
+.invis-container {
+    margin: 20px;
+    height: 145px;
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Divider (Spacer) */
+.divider {
+    height: 340px;
+    width: 100%;
+}
+
+/* Tool Box Section */
+.tool-box {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(83, 127, 255);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* === Tool Buttons === */
+
+/* Button 1 (Small) */
+.tool-button1 {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(249, 217, 165);
+    transition: transform 0.3s ease;
+    font-family: 'hylia-serif';
+    font-size: 25px;
+    text-align: center;
+    color: rgb(192, 104, 145);
+}
+
+.tool-button1:hover {
+    transform: scale(1.2);
+}
+
+/* Button 2 (Medium) */
+.tool-button2 {
+    width: 110px;
+    height: 50px;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(96, 147, 151);
+    transition: transform 0.3s ease;
+    line-height: 45px;
+    font-family: 'hylia-serif';
+    font-size: 25px;
+    text-align: center;
+    color: rgb(249, 217, 165);
+}
+
+.tool-button2:hover {
+    transform: scale(1.1);
+}
+
+/* Button 3 (Large) */
+.tool-button3 {
+    width: 170px;
+    height: 50px;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(192, 104, 145);
+    transition: transform 0.3s ease;
+    line-height: 45px;
+    font-family: 'hylia-serif';
+    font-size: 25px;
+    text-align: center;
+    color: rgb(249, 217, 165);
+}
+
+.tool-button3:hover {
+    transform: scale(1.05);
+}
+
+/* Brightness Slider */
+input[type="range"] {
+    width: 170px;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#brightness {
+    transition: opacity 0.2s ease;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* === Audio Controls === */
+
+/* Music Bar */
+.music-bar {
+    width: 110px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 200px;
+    left: 20px;
+}
+
+/* Audio Box (Container) */
+.audio-box {
+    height: 80px;
+    width: auto;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(83, 127, 255);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding-right: 10px;
+}
+
+/* Hidden Audio Controls */
+.audio-controls {
+    width: 60px;
+    margin: 10px;
+    transition: width 0.3s ease;
+}
+
+.audio-box:hover .audio-controls {
+    width: 400px;
+}
+
+/* === Checklist === */
+
+/* Checklist Container */
+.checklist-container {
+    height: 420px; /* Increased height to fit more checkboxes */
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(83, 127, 255);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column; /* Align checkboxes vertically */
+    padding: 10px;
+    overflow-y: auto; /* Allows scrolling if needed */
+}
+
+/* Checkbox Wrapper */
+.checkbox-wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Checkbox Input */
+input[type="checkbox"] {
+    outline: none;
+    transform: scale(1.75);
+    accent-color: rgb(96, 147, 151);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Text Input for Custom Note */
+.checkbox-text {
+    font-family: 'hylia-serif';
+    font-size: 16px;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(249, 217, 165);
+    border: none;
+    border-radius: 10px;
+    color: rgb(135, 81, 174);
+    outline: none;
+    padding-left: 10px;
+}
+
+/* Text with line-through */
+.checkbox-text.checked {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5); /* Optional: change color to indicate completed status */
+}
+
+.checkbox-text:hover {
+    background-color: rgb(206, 181, 140);
+}
+
+/* === Timer Section === */
+
+/* Timer Box */
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(83, 127, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    font-family: 'hylia-serif';
+    bottom: 20px;
+    width: 400px;
+    height: 100px;
+
+    /* Focused */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Timer Display */
+#timer {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgb(249, 217, 165);
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* === Control Buttons === */
+#startPause, #reset, #toggleDuration {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'hylia-serif';
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Start/Pause Button */
+#startPause {
+    background-color: rgb(192, 104, 145);
+}
+
+#startPause:hover {
+    transform: scale(1.05);
+}
+
+/* Reset Button */
+#reset {
+    background-color: rgb(96, 147, 151);
+}
+
+#reset:hover {
+    transform: scale(1.05);
+}
+
+/* Toggle Duration Button */
+#toggleDuration {
+    background-color: rgb(249, 217, 165);
+    color: rgb(96, 147, 151);
+}
+
+#toggleDuration:hover {
+    transform: scale(1.05);
+}
+
+/* === Links Dropdown === */
+.links-dropdown {
+    height: 20px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid rgb(83, 127, 255);
+    color: white;
+    font-family: 'hylia-serif';
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: height 0.3s ease;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.links-dropdown:hover {
+    height: 400px;
+}
+
+.dropdown-instructions {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+.links-dropdown:hover .dropdown-instructions {
+    opacity: 0;
+}
+
+.link1 {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: hylia-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 375px;
+    height: 30px;
+    background-color: rgb(249, 217, 165);
+    border-radius: 10px;
+    color: rgb(135, 81, 174);
+    padding: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.link1:hover {
+    background-color: rgb(206, 181, 140);
+}
+
+.links-dropdown:hover .link1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* === Background Sounds === */
+.button-on {
+    background-color: rgb(206, 181, 140);
+}
+
+
+/* === Focus/Brightness Slider === */
+.visible {
+    z-index: 1000;
+}
+
+.focused {
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.centered {
+    transform: translate(-50%, -150%); /* Moves the element to the center smoothly */
+}
+
+.clock-mini {
+    height: 50px;
+    width: 400px;
+    position: relative;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    opacity: 0; /* Default state */
+    transition: opacity 0.5s ease;
+
+    font-size: 30px;
+    line-height: 0;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid rgb(83, 127, 255);
+}
+
+.clock-mini.visible {
+    opacity: 1; /* State when visible */
+}
