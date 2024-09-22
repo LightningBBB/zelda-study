@@ -1,4 +1,3 @@
-/* === Custom Fonts === */
 @font-face {
     font-family: 'bluffolk';
     src: url(../recources/fonts/Bluffolk.otf);
@@ -9,7 +8,6 @@
     src: url(../recources/fonts/HyliaSerifBeta-Regular.otf);
 }
 
-/* === General Body Styles === */
 body {
     margin: 0;
     background-color: rgb(124, 126, 221);
@@ -17,7 +15,6 @@ body {
     justify-content: center;
 }
 
-/* === Font Colors === */
 .font-red {
     color: rgb(192, 104, 145);
 }
@@ -30,7 +27,6 @@ body {
     color: rgb(249, 217, 165);
 }
 
-/* === Wallpaper Image === */
 #wallpaper-image {
     background-size: cover;
     height: 100vh;
@@ -40,12 +36,10 @@ body {
     left: 0;
 }
 
-/* === Layout Sections === */
-
 .clock-box {
     top: 20px;
     left: 20px;
-    position: fixed; /* Change this from relative to fixed */
+    position: fixed;
 }
 
 .date-box {
@@ -54,7 +48,6 @@ body {
     position: fixed;
 }
 
-/* Container for Centered Content */
 .container {
     height: 105px;
     width: 435px;
@@ -71,7 +64,6 @@ body {
     font-size: 60px;
 }
 
-/* Invisible Container */
 .invis-container {
     margin: 20px;
     height: 145px;
@@ -81,13 +73,11 @@ body {
     align-items: center;
 }
 
-/* Divider (Spacer) */
 .divider {
     height: 340px;
     width: 100%;
 }
 
-/* Tool Box Section */
 .tool-box {
     display: flex;
     flex-wrap: wrap;
@@ -102,9 +92,6 @@ body {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* === Tool Buttons === */
-
-/* Button 1 (Small) */
 .tool-button1 {
     width: 50px;
     height: 50px;
@@ -125,7 +112,6 @@ body {
     transform: scale(1.2);
 }
 
-/* Button 2 (Medium) */
 .tool-button2 {
     width: 110px;
     height: 50px;
@@ -147,7 +133,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Button 3 (Large) */
 .tool-button3 {
     width: 170px;
     height: 50px;
@@ -169,7 +154,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Brightness Slider */
 input[type="range"] {
     width: 170px;
     margin: 5px;
@@ -190,9 +174,6 @@ input[type="range"] {
     opacity: 0;
 }
 
-/* === Audio Controls === */
-
-/* Music Bar */
 .music-bar {
     width: 110px;
     height: auto;
@@ -203,7 +184,6 @@ input[type="range"] {
     left: 20px;
 }
 
-/* Audio Box (Container) */
 .audio-box {
     height: 80px;
     width: auto;
@@ -219,7 +199,6 @@ input[type="range"] {
     padding-right: 10px;
 }
 
-/* Hidden Audio Controls */
 .audio-controls {
     width: 60px;
     margin: 10px;
@@ -230,11 +209,8 @@ input[type="range"] {
     width: 400px;
 }
 
-/* === Checklist === */
-
-/* Checklist Container */
 .checklist-container {
-    height: 420px; /* Increased height to fit more checkboxes */
+    height: 420px;
     width: 300px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -244,12 +220,11 @@ input[type="range"] {
     border: 2px solid rgb(83, 127, 255);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
     display: flex;
-    flex-direction: column; /* Align checkboxes vertically */
+    flex-direction: column;
     padding: 10px;
-    overflow-y: auto; /* Allows scrolling if needed */
+    overflow-y: auto;
 }
 
-/* Checkbox Wrapper */
 .checkbox-wrapper {
     margin-bottom: 10px;
     display: flex;
@@ -257,7 +232,6 @@ input[type="range"] {
     width: 100%;
 }
 
-/* Checkbox Input */
 input[type="checkbox"] {
     outline: none;
     transform: scale(1.75);
@@ -267,7 +241,6 @@ input[type="checkbox"] {
     transition: transform 0.3s ease;
 }
 
-/* Text Input for Custom Note */
 .checkbox-text {
     font-family: 'hylia-serif';
     font-size: 16px;
@@ -281,19 +254,15 @@ input[type="checkbox"] {
     padding-left: 10px;
 }
 
-/* Text with line-through */
 .checkbox-text.checked {
     text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.5); /* Optional: change color to indicate completed status */
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .checkbox-text:hover {
     background-color: rgb(206, 181, 140);
 }
 
-/* === Timer Section === */
-
-/* Timer Box */
 .timer-box {
     display: flex;
     flex-direction: column;
@@ -310,21 +279,18 @@ input[type="checkbox"] {
     width: 400px;
     height: 100px;
 
-    /* Focused */
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
-/* Timer Display */
 #timer {
     font-size: 3em;
     margin-bottom: 10px;
     color: rgb(249, 217, 165);
 }
 
-/* Controls Section */
 .controls {
     display: flex;
     gap: 10px;
@@ -332,7 +298,6 @@ input[type="checkbox"] {
     justify-content: center;
 }
 
-/* === Control Buttons === */
 #startPause, #reset, #toggleDuration {
     width: 100px;
     height: 50px;
@@ -346,7 +311,6 @@ input[type="checkbox"] {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Start/Pause Button */
 #startPause {
     background-color: rgb(192, 104, 145);
 }
@@ -355,7 +319,6 @@ input[type="checkbox"] {
     transform: scale(1.05);
 }
 
-/* Reset Button */
 #reset {
     background-color: rgb(96, 147, 151);
 }
@@ -364,7 +327,6 @@ input[type="checkbox"] {
     transform: scale(1.05);
 }
 
-/* Toggle Duration Button */
 #toggleDuration {
     background-color: rgb(249, 217, 165);
     color: rgb(96, 147, 151);
@@ -374,7 +336,6 @@ input[type="checkbox"] {
     transform: scale(1.05);
 }
 
-/* === Links Dropdown === */
 .links-dropdown {
     height: 20px;
     width: 400px;
@@ -438,23 +399,20 @@ input[type="checkbox"] {
     transform: translateY(0);
 }
 
-/* === Background Sounds === */
 .button-on {
     background-color: rgb(206, 181, 140);
 }
 
-
-/* === Focus/Brightness Slider === */
 .visible {
     z-index: 1000;
 }
 
 .focused {
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    transition: transform 0.5s ease-in-out;
 }
 
 .centered {
-    transform: translate(-50%, -150%); /* Moves the element to the center smoothly */
+    transform: translate(-50%, -150%);
 }
 
 .clock-mini {
@@ -465,7 +423,7 @@ input[type="checkbox"] {
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
-    opacity: 0; /* Default state */
+    opacity: 0;
     transition: opacity 0.5s ease;
 
     font-size: 30px;
@@ -478,5 +436,5 @@ input[type="checkbox"] {
 }
 
 .clock-mini.visible {
-    opacity: 1; /* State when visible */
+    opacity: 1;
 }
