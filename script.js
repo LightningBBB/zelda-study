@@ -325,3 +325,25 @@ document.getElementById('brightness-slider').addEventListener('input', updateClo
 
 // Initial check in case the page loads with a slider value >= 0.9
 updateClockMiniVisibility();
+
+// ==============================================
+// If-Mobile-True
+// ==============================================
+
+// Function to check if the user is on a mobile device
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+// Function to hide elements with a specific class on mobile devices
+function hideElementsOnMobile() {
+    if (isMobileDevice()) {
+        const elements = document.getElementsByClassName('mobile-hide'); // Replace with your class name
+        for (let element of elements) {
+            element.style.display = 'none'; // Hides each element
+        }
+    }
+}
+
+// Call the function when the page loads
+window.onload = hideElementsOnMobile;
