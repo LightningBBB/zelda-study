@@ -439,3 +439,16 @@ input[type="checkbox"] {
 .clock-mini.visible {
     opacity: 1;
 }
+
+
+/* Add this media query for mobile screens */
+@media (max-width: 600px) {
+    .checklist-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add space between checkbox and timer */
+    }
+
+    .timer-box {
+        margin-top: auto; /* Push timer to the bottom of the container */
+    }
+}
