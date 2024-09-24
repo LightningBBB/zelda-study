@@ -439,37 +439,3 @@ input[type="checkbox"] {
 .clock-mini.visible {
     opacity: 1;
 }
-
-/* Mobile */
-/* Styles for mobile */
-/* Add this CSS to your styles.css file */
-
-@media (max-width: 768px) {
-    .checklist-container {
-        position: absolute; /* Allows us to overlay it on top of the timer */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Centering */
-        width: 90%; /* Adjust width to fit smaller screens */
-        max-height: 70%; /* Prevents overflowing */
-        overflow-y: auto; /* Allows scrolling if notes exceed height */
-        z-index: 2; /* Ensure it’s on top of the timer */
-    }
-
-    .timer-box {
-        position: absolute; /* Allows us to overlay it */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Centering */
-        width: 80%; /* Responsive width */
-        z-index: 1; /* Below the checklist */
-    }
-
-    #timer {
-        font-size: 5vw; /* Adjust font size relative to viewport width */
-    }
-
-    .checkbox-text {
-        font-size: 4vw; /* Adjust text size for the checkbox inputs */
-    }
-}
