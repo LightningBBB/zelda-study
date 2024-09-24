@@ -445,11 +445,14 @@ input[type="checkbox"] {
 @media (max-width: 600px) {
     .checklist-container {
         flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Add space between checkbox and timer */
         margin-bottom: 50px;
+        top: 20px;
+        position: absolute;
     }
 
     .timer-box {
         margin-top: auto; /* Push timer to the bottom of the container */
+        bottom: 20px;
+        position: absolute;
     }
 }
