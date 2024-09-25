@@ -210,7 +210,7 @@ input[type="range"] {
 }
 
 .checklist-container {
-    height: 520px;
+    height: 500px;
     width: 300px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
