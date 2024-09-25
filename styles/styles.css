@@ -223,7 +223,6 @@ input[type="range"] {
     flex-direction: column;
     padding: 10px;
     overflow-y: auto;
-    max-height: 50vh;
 }
 
 .checkbox-wrapper {
